@@ -2,7 +2,8 @@
 # -*- coding: utf-8 -*-
 import pygame
 
-from code.Const import WIN_WIDTH, WIN_HEIGHT
+from code.Const import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
+from code.Level import Level
 from code.Menu import Menu
 
 
@@ -10,7 +11,7 @@ class Game:
     def __init__(self):
         pygame.init()
         self.window=pygame.display.set_mode(
-        size=(WIN_WIDTH, WIN_HEIGHT)   #altera o tamanho da janela/background#
+        size=(WIN_WIDTH, WIN_HEIGHT)     #altera o tamanho da janela/background
         )
 
     def run(self, ):
@@ -20,9 +21,16 @@ class Game:
         #print('Loop Start')
         while True:
             menu = Menu(self.window)
-            menu.run()
-            pass
+            menu_return = menu.run()
 
+            if menu_return in [MENU_OPTION[0], MENU_OPTION[1]]:
+                level = Level(self.window, 'Level1', menu_return)
+                level_return = level.run()
+            elif menu_return == MENU_OPTION[3]:
+                pygame.quit()   #close window
+                quit()   #end pygame
+            else:
+                pass
 
 
 

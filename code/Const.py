@@ -5,7 +5,7 @@ WIN_HEIGHT = 1080
 #ALTERA A COR DA FONTE
 COLOR_PURPLE = 154, 44, 254
 COLOR_BLUE = 77, 134, 191
-CLOR_PINK = 163, 105, 147
+COLOR_PINK = 163, 105, 147
 
 #ESCRITA DO MENU
 MENU_OPTION = (
@@ -14,3 +14,16 @@ MENU_OPTION = (
     'SCORE',
     'LEAVE'
 )
+
+#ALTERA A VELOCIDADE DO BACKGROUND
+ENTITY_SPEED = {
+    'lvl11': 0,
+    'lvl12': 1,
+    'lvl13': 2,
+    'lvl14': 3,
+    'lvl15': 4,
+    'lvl16': 5,
+    'lvl17': 6,
+}
+
+
