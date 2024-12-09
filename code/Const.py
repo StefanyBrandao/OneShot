@@ -10,7 +10,6 @@ COLOR_PINK = 163, 105, 147
 #ESCRITA DO MENU
 MENU_OPTION = (
     'NEW GAME ONE PLAYER',
-    'NEW GAME TWO PLAYERS',
     'SCORE',
     'LEAVE'
 )
@@ -24,6 +23,7 @@ ENTITY_SPEED = {
     'lvl15': 4,
     'lvl16': 5,
     'lvl17': 6,
+    'Player': 3,
 }
 
 
