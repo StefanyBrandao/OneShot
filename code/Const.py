@@ -25,12 +25,12 @@ ENTITY_SPEED = {
     'Level1BG4': 0,
     'Level1BG5': 0,
     'Level1BG6': 0,
-    'Player1': 6,
-    'Player1Shot': 6,
-    'Enemy1': 6,
-    'Enemy1Shot': 6,
-    'Enemy2': 6,
-    'Enemy2Shot': 6,
+    'Player1': 4,
+    'Player1Shot': 4,
+    'Enemy1': 2,
+    'Enemy1Shot': 5,
+    'Enemy2': 2,
+    'Enemy2Shot': 5,
 }
 
 
@@ -66,19 +66,19 @@ ENTITY_DAMAGE = {
     'Level1BG4': 0,
     'Level1BG5': 0,
     'Level1BG6': 0,
-    'Player1': 5,
+    'Player1': 1,
     'Player1Shot': 5,
-    'Enemy1': 5,
-    'Enemy1Shot': 5,
-    'Enemy2': 5,
-    'Enemy2Shot': 5,
+    'Enemy1': 1,
+    'Enemy1Shot': 35,
+    'Enemy2': 1,
+    'Enemy2Shot': 25,
 }
 
 
 ENTITY_SHOT_DELAY = {
-    'Player1': 500,
-    'Enemy1': 400,
-    'Enemy2': 300,
+    'Player1': 300,
+    'Enemy1': 200,
+    'Enemy2': 200,
 }
 
 #EVENTS

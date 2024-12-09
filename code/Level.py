@@ -32,7 +32,7 @@ class Level:
         pygame.time.set_timer(EVENT_ENEMY, SPAWN_TIME)
         pygame.time.set_timer(EVENT_TIMEOUT, TIMEOUT_STEP)
 
-    def run(self):
+    def run(self, ):
         pygame.mixer_music.load(f'./asset/LVL1SOUND.mp3')
         pygame.mixer_music.play(-1)
         clock = pygame.time.Clock()
@@ -40,7 +40,6 @@ class Level:
             clock.tick(90)
             for ent in self.entity_list:
                 self.window.blit(source=ent.surf, dest=ent.rect)
-
                 ent.move()
                 if isinstance(ent, (Player, Enemy)):
                     shoot = ent.shoot()
@@ -81,6 +80,7 @@ class Level:
             #COLISÕES ENTRE PLAYER E INIMIGO
             EntityMediator.verify_collision(entity_list=self.entity_list)
             EntityMediator.verify_health(entity_list=self.entity_list)
+
         #pass
 
     def level_text(self, text_size: int, text: str, text_color: tuple, text_pos: tuple):
